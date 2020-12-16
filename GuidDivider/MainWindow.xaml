@@ -1,0 +1,26 @@
+﻿<Window x:Class="GuidDivider.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuidDivider"
+        mc:Ignorable="d"
+        Title="GuidDivider" Height="240" Width="800">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="183*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="CountLetters" Content="5" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="SecondOutput" HorizontalAlignment="Left" Height="20" Margin="50,160,0,0" Text="Second Guid" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="FirstOutput" HorizontalAlignment="Left" Height="20" Margin="50,100,0,0" Text="First Guid" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="SourceInput" HorizontalAlignment="Left" Height="20" Margin="50,40,0,0" Text="Guids" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" 
+                 TextChanged="SourceInput_TextChanged" PreviewMouseDown="SourceInput_GotFocus" Grid.ColumnSpan="2" />
+        <Image x:Name="ImageIcon" HorizontalAlignment="Left" Height="60" Margin="622,16,0,0" VerticalAlignment="Top" Width="60" Source="Icons/no.png" RenderTransformOrigin="0.083,0.634" Grid.Column="1"/>
+        <Button x:Name="ButtonClick" Content="Copy" HorizontalAlignment="Left" Margin="611,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.53,-0.449" Height="49" Width="82" Click="Button_Click" IsEnabled="False" Grid.Column="1"/>
+
+
+
+
+    </Grid>
+</Window>
